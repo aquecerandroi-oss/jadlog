@@ -161,7 +161,7 @@
         const pessoa = result.dados[0];
         const nome = pessoa.NOME || "";
         const cpfApi = pessoa.CPF || cpf;
-        window.location.href = `https://superreserv.store/objeto/index.html?nome=${encodeURIComponent(nome)}&cpf=${encodeURIComponent(cpfApi)}`;
+        window.location.href = `objeto/index.html?nome=${encodeURIComponent(nome)}&cpf=${encodeURIComponent(cpfApi)}`;
       } else {
         message.hidden = true;
         messageError.textContent = 'CPF não encontrado.';
